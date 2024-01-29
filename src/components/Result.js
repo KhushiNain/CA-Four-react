@@ -8,7 +8,8 @@ export default function Result({ score, total, handleRestart,mode }) {
         <h1>Congratulation !</h1>
         <p>You answered</p>
         <h2>
-          {score}/{total}
+          {`${score}/${total} (${((score/5*100))}%)`}
+         
         </h2>
         <p>questions correctly</p>
         <button style={{color: mode ?"#8435DE":"#D2E0FB"}} onClick={handleRestart}>Restart</button>
